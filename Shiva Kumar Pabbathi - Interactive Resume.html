@@ -44,19 +44,19 @@
 	<script charset="utf-8" src="./Shiva Kumar Pabbathi - Interactive Resume_files/button.93a0c25c2d2f3081c705c98c2d9dec0e.js.download"></script>
 	<script> var i = 0;
 			var txt = "I'm Shiva Kumar";
-			var speed = 100;
+			var speed = 250;
 
 			function typeWriter() {
 			  if (i < txt.length) {
 				document.getElementById("headline").innerHTML += txt.charAt(i);
 				i++;
-				setTimeout(typeWriter, speed);
+				aa = setTimeout(typeWriter, speed);
 			  }
 			  if (i == txt.length){
-			  setTimeout(remove, 3000);
+			  bb = setTimeout(remove, 3000);
 			  }
 			};
-			function remove(){document.getElementById("headline").innerHTML = "";i = 0;setTimeout(typeWriter, 50)};
+			function remove(){document.getElementById("headline").innerHTML = "";i = 0;clearTimeout(aa);clearTimeout(bb);document.getElementById("headline").click();};
 			</script>
 	</head>
 	<body data-spy="scroll" data-target="#navbar-example" data-gr-c-s-loaded="true" style="" class="">	 
@@ -64,11 +64,11 @@
 			
 		<div id="top" class="jumbotron" data-src="/view/images/metro_animation.gif" data-position="center right" style="height: 674px;">
 			<div class="container">
-				<h1 id = 'headline' onload = 'typeWriter()'></h1>
+				<h1 id = 'headline' onclick = 'typeWriter()'></h1>
 				<p class="lead" onclick = 'typeWriter()'>Interactive resume</p>
 			</div>
 			
-			<div class="overlay"></div>
+			<!-- <div class="overlay"></div> -->
 			
 			<a href="#profile" class="scroll-down">	
 				<span class="glyphicon glyphicon-chevron-down"></span>
