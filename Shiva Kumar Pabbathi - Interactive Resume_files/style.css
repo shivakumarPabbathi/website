@@ -97,14 +97,17 @@ hr { margin: 40px 0px; border-color: #727878; opacity: 0.2; filter:alpha(opacity
 #experiences .experience { margin-bottom: 20px; }
 #experiences .experience p > strong { display: block; padding-top: 8px; margin-bottom: 10px; }
 #experiences .experience .experience-details { display: block; margin-top: 6px; }
-#experiences .experience .experience-details * { color: #22A39F; }
+#experiences .experience .experience-details * { color: #fff; }
 #experiences .experience .experience-details .seperator { color: #BCBCBC; }
 
-#abilities ul > li { min-height: 30px; padding: 3px 0px; }
-#abilities ul > li:hover { background: #F2F2F2; }
-#abilities ul > li .ability-title { display: inline-block; width: 60%; }
-#abilities ul > li .ability-score { float: right; }
-#abilities ul > li .ability-score .glyphicon { 
+#education .experience .row{padding-bottom:50px;padding-top:50px;} 
+#education {padding-bottom:300px,color:#fff}
+
+#skills ul > li { min-height: 30px; padding: 3px 0px; }
+#skills ul > li:hover { background: #F2F2F2; }
+#skills ul > li .ability-title { display: inline-block; width: 60%; }
+#skills ul > li .ability-score { float: right; }
+#skills ul > li .ability-score .glyphicon { 
 	color: #DFE0E0; 
 	font-size: 14px; 
 	 
@@ -113,9 +116,9 @@ hr { margin: 40px 0px; border-color: #727878; opacity: 0.2; filter:alpha(opacity
     -o-transition: all 0.3s;
     transition: all 0.3s;
 }
-#abilities ul > li .ability-score .glyphicon.filled { color: #22A39F; }
+#skills ul > li .ability-score .glyphicon.filled { color: #22A39F; }
 
-#abilities ul > li:hover .ability-score .glyphicon { margin-left: 2px; } 
+#skills ul > li:hover .ability-score .glyphicon { margin-left: 2px; } 
 
 #interests .left { float: left; }
 #interests .right { float: right; }
@@ -195,7 +198,6 @@ hr { margin: 40px 0px; border-color: #727878; opacity: 0.2; filter:alpha(opacity
 	height:56px;
 	text-indent:-9999px;
 	display:block;
-	background:url('https://s3.amazonaws.com/onepagelove/one-page-love-award.png') no-repeat;
 }
 
 @media (max-width: 1200px) { 
@@ -225,6 +227,10 @@ hr { margin: 40px 0px; border-color: #727878; opacity: 0.2; filter:alpha(opacity
 	
 	#experiences .experience .experience-details > span { display: block; margin-bottom: 6px; }
 	#experiences .experience .experience-details .seperator { display: none; }
+	
+	#education .experience .experience-details > span { display: block; margin-bottom: 6px; }
+	#education .experience .experience-details .seperator { display: none; }
+	
 	
 	#interests .left { float: none; }
 	#interests .right { float: none; }
@@ -343,4 +349,9 @@ figure.effect:hover p {
 	opacity: 1;
 	-webkit-transform: translate3d(0,0,0);
 	transform: translate3d(0,0,0);
+}
+.shiv-edu{
+	background:url('images/education.jpg') no-repeat;
+	background-size:cover;
+	color: #0b1337;
 }
